@@ -18,8 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSURL *url = [NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/autocomplete/output?input=italy&sensor=true&key=AIzaSyD70SLSLwCidhKCtnecVs7TXAU6v3BM-2g"];
+//    NSURL *url = [NSURL URLWithString:@"https://maps.googleapis.com/maps/api/place/autocomplete/output?input=italy&sensor=true&key=AIzaSyD70SLSLwCidhKCtnecVs7TXAU6v3BM-2g"];
+    
+    NSURL *url = [NSURL URLWithString:@"http://yahoo.co.jp"];
+    
     NSURLRequest *r = [NSURLRequest requestWithURL:url];
+    NSLog(@"%@",r.HTTPBody);
     
     
     
